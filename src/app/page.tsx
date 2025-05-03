@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, FileText, MessageSquare } from "lucide-react";
+import { ChatInterface } from "@/components/ChatInterface";
 
 export default function Home() {
   return (
@@ -29,18 +30,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Chatbot Placeholder */}
+      {/* Chat Interface Section */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Ask About Your Rights</h2>
-            <p className="text-gray-600">Coming soon: Chat with our AI about your specific rental situation</p>
+            <p className="text-gray-600">Upload your tenancy agreement and chat with our AI about your specific rental situation</p>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-8 min-h-[400px] flex items-center justify-center">
-            <div className="text-center">
-              <MessageSquare className="w-12 h-12 mx-auto mb-4 text-gray-400" />
-              <p className="text-gray-500">AI-powered rental rights assistant coming soon</p>
-            </div>
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <ChatInterface />
           </div>
         </div>
       </section>
